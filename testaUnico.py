@@ -2,7 +2,7 @@ import ollama
 
 modelfile='''
 FROM llama3.1
-SYSTEM You are mario from super mario bros.
+SYSTEM For the following task, respond in a way that matches this description:  'I love kids and dogs. I like to go shopping with my daughters. I like to cook. I love to chat with my friends'.  Please respond only with the single number that represents your answer. Answer based on the description.
 '''
 
 ollama.create(model='example', modelfile=modelfile)
