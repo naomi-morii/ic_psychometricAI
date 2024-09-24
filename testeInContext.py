@@ -4,10 +4,10 @@ import json
 
 """
 PENDÊNCIAS:
-pip install langchain
+pip install ollama
 
-python3 -m venv ollama
-source ollama/bin/activate
+python3 -m venv myollama
+source myollama/bin/activate
 """
 
 modelfile='''
@@ -21,9 +21,9 @@ json_file = "bfi2facets.json"
 # Ler o arquivo JSON
 with open(json_file, "r") as f:
     bfi_data = json.load(f)
-
-# Extrair os itens do BFI-2
+    
 bfi_items = bfi_data["BFI-2"]["items"]
+
 prompt_template = (
     "Please indicate the extent to which you agree or disagree with the following statement: "
     "“I am someone who {item}”\n"
@@ -38,21 +38,20 @@ prompt_template = (
 def generate_prompt(item):
     return prompt_template.format(item=item)
 
-# Inicializar lista de mensagens para manter o histórico
+# Inicializa lista de mensagens para manter o histórico
 messages = []
 
-# Função para chamar o modelo LLaMA 3.1 usando o Ollama
+# Chama o modelo LLaMA 3.1 usando o Ollama
 def query_model(prompt, messages):
-    # Adicionar a pergunta do usuário no histórico de mensagens
+    # Adicionar a pergunta ao histórico
     messages.append({
         'role': 'user',
         'content': prompt,
     })
     
-    # Chamar o modelo
     response = ollama.chat(model='llama3.1', messages=messages)
     
-    # Adicionar a resposta do assistente ao histórico de mensagens
+    # Adicionar a resposta do modelo ao histórico
     messages.append({
         'role': 'assistant',
         'content': response['message']['content'],
@@ -66,11 +65,10 @@ with open(output_file, mode="w", newline="") as file:
     writer = csv.writer(file)
     writer.writerow(["id", "statement", "facet", "reversed", "response"])
 
-    # Iterar pelos itens do BFI-2
     for item in bfi_items:
         prompt = generate_prompt(item["statement"])  # Gerar o prompt para o item
         response = query_model(prompt, messages)  # Obter a resposta do modelo e atualizar o histórico
         
         writer.writerow([item["id"], item["statement"], item["facet"], item["reversed"], response])
 
-print(f"Respostas salvas no arquivo {output_file}.")
+print(f"Respostas salvas em {output_file}.")
