@@ -1,0 +1,366 @@
+{
+    "BFI-2": {
+        "items": [
+            {
+                "id": 1,
+                "statement": "Is outgoing, sociable.",
+                "reversed": false,
+                "facet": "Sociability"
+            },
+            {
+                "id": 2,
+                "statement": "Is compassionate, has a soft heart.",
+                "reversed": false,
+                "facet": "Compassion"
+            },
+            {
+                "id": 3,
+                "statement": "Tends to be disorganized.",
+                "reversed": true,
+                "facet": "Organization"
+            },
+            {
+                "id": 4,
+                "statement": "Is relaxed, handles stress well.",
+                "reversed": true,
+                "facet": "Anxiety"
+            },
+            {
+                "id": 5,
+                "statement": "Has few artistic interests.",
+                "reversed": true,
+                "facet": "Aesthetic_Sensitivity"
+            },
+            {
+                "id": 6,
+                "statement": "Has an assertive personality.",
+                "reversed": false,
+                "facet": "Assertiveness"
+            },
+            {
+                "id": 7,
+                "statement": "Is respectful, treats others with respect.",
+                "reversed": false,
+                "facet": "Respectfulness"
+            },
+            {
+                "id": 8,
+                "statement": "Tends to be lazy.",
+                "reversed": true,
+                "facet": "Productiveness"
+            },
+            {
+                "id": 9,
+                "statement": "Stays optimistic after experiencing a setback.",
+                "reversed": true,
+                "facet": "Depression"
+            },
+            {
+                "id": 10,
+                "statement": "Is curious about many different things.",
+                "reversed": false,
+                "facet": "Intellectual_curiosity"
+            },
+            {
+                "id": 11,
+                "statement": "Rarely feels excited or eager.",
+                "reversed": true,
+                "facet": "Energy level"
+            },
+            {
+                "id": 12,
+                "statement": "Tends to find fault with others.",
+                "reversed": true,
+                "facet": "Trust"
+            },
+            {
+                "id": 13,
+                "statement": "Is dependable, steady.",
+                "reversed": false,
+                "facet": "Responsibility"
+            },
+            {
+                "id": 14,
+                "statement": "Is moody, has up and down mood swings.",
+                "reversed": false,
+                "facet": "Emotional Volatility"
+            },
+            {
+                "id": 15,
+                "statement": "Is inventive, finds clever ways to do things.",
+                "reversed": false,
+                "facet": "Creative Imagination"
+            },
+            {
+                "id": 16,
+                "statement": "Tends to be quiet.",
+                "reversed": true,
+                "facet": "Sociability"
+            },
+            {
+                "id": 17,
+                "statement": "Feels little sympathy for others.",
+                "reversed": true,
+                "facet": "Compassion"
+            },
+            {
+                "id": 18,
+                "statement": "Is systematic, likes to keep things in order.",
+                "reversed": false,
+                "facet": "Organization"
+            },
+            {
+                "id": 19,
+                "statement": "Can be tense.",
+                "reversed": false,
+                "facet": "Anxiety"
+            },
+            {
+                "id": 20,
+                "statement": "Is fascinated by art, music, or literature.",
+                "reversed": false,
+                "facet": "Aesthetic_Sensitivity"
+            },
+            {
+                "id": 21,
+                "statement": "Is dominant, acts as a leader.",
+                "reversed": false,
+                "facet": "Assertiveness"
+            },
+            {
+                "id": 22,
+                "statement": "Starts arguments with others.",
+                "reversed": true,
+                "facet": "Respectfulness"
+            },
+            {
+                "id": 23,
+                "statement": "Has difficulty getting started on tasks.",
+                "reversed": true,
+                "facet": "Productiveness"
+            },
+            {
+                "id": 24,
+                "statement": "Feels secure, comfortable with self.",
+                "reversed": true,
+                "facet": "Depression"
+            },
+            {
+                "id": 25,
+                "statement": "Avoids intellectual, philosophical discussions.",
+                "reversed": true,
+                "facet": "Intellectual_curiosity"
+            },
+            {
+                "id": 26,
+                "statement": "Is less active than other people.",
+                "reversed": true,
+                "facet": "Energy level"
+            },
+            {
+                "id": 27,
+                "statement": "Has a forgiving nature.",
+                "reversed": false,
+                "facet": "Trust"
+            },
+            {
+                "id": 28,
+                "statement": "Can be somewhat careless.",
+                "reversed": true,
+                "facet": "Responsibility"
+            },
+            {
+                "id": 29,
+                "statement": "Is emotionally stable, not easily upset.",
+                "reversed": true,
+                "facet": "Emotional Volatility"
+            },
+            {
+                "id": 30,
+                "statement": "Has little creativity.",
+                "reversed": true,
+                "facet": "Creative Imagination"
+            },
+            {
+                "id": 31,
+                "statement": "Is sometimes shy, introverted.",
+                "reversed": true,
+                "facet": "Sociability"
+            },
+            {
+                "id": 32,
+                "statement": "Is helpful and unselfish with others.",
+                "reversed": false,
+                "facet": "Compassion"
+            },
+            {
+                "id": 33,
+                "statement": "Keeps things neat and tidy.",
+                "reversed": false,
+                "facet": "Organization"
+            },
+            {
+                "id": 34,
+                "statement": "Worries a lot.",
+                "reversed": false,
+                "facet": "Anxiety"
+            },
+            {
+                "id": 35,
+                "statement": "Values art and beauty.",
+                "reversed": false,
+                "facet": "Aesthetic_Sensitivity"
+            },
+            {
+                "id": 36,
+                "statement": "Finds it hard to influence people.",
+                "reversed": true,
+                "facet": "Assertiveness"
+            },
+            {
+                "id": 37,
+                "statement": "Is sometimes rude to others.",
+                "reversed": true,
+                "facet": "Respectfulness"
+            },
+            {
+                "id": 38,
+                "statement": "Is efficient, gets things done.",
+                "reversed": false,
+                "facet": "Productiveness"
+            },
+            {
+                "id": 39,
+                "statement": "Often feels sad.",
+                "reversed": false,
+                "facet": "Depression"
+            },
+            {
+                "id": 40,
+                "statement": "Is complex, a deep thinker.",
+                "reversed": false,
+                "facet": "Intellectual_curiosity"
+            },
+            {
+                "id": 41,
+                "statement": "Is full of energy.",
+                "reversed": false,
+                "facet": "Energy level"
+            },
+            {
+                "id": 42,
+                "statement": "Is suspicious of others\u2019 intentions.",
+                "reversed": true,
+                "facet": "Trust"
+            },
+            {
+                "id": 43,
+                "statement": "Is reliable, can always be counted on.",
+                "reversed": false,
+                "facet": "Responsibility"
+            },
+            {
+                "id": 44,
+                "statement": "Keeps their emotions under control.",
+                "reversed": true,
+                "facet": "Emotional Volatility"
+            },
+            {
+                "id": 45,
+                "statement": "Has difficulty imagining things.",
+                "reversed": true,
+                "facet": "Creative Imagination"
+            },
+            {
+                "id": 46,
+                "statement": "Is talkative.",
+                "reversed": false,
+                "facet": "Sociability"
+            },
+            {
+                "id": 47,
+                "statement": "Can be cold and uncaring.",
+                "reversed": true,
+                "facet": "Compassion"
+            },
+            {
+                "id": 48,
+                "statement": "Leaves a mess, doesn\u2019t clean up.",
+                "reversed": true,
+                "facet": "Organization"
+            },
+            {
+                "id": 49,
+                "statement": "Rarely feels anxious or afraid.",
+                "reversed": true,
+                "facet": "Anxiety"
+            },
+            {
+                "id": 50,
+                "statement": "Thinks poetry and plays are boring.",
+                "reversed": true,
+                "facet": "Aesthetic_Sensitivity"
+            },
+            {
+                "id": 51,
+                "statement": "Prefers to have others take charge.",
+                "reversed": true,
+                "facet": "Assertiveness"
+            },
+            {
+                "id": 52,
+                "statement": "Is polite, courteous to others.",
+                "reversed": false,
+                "facet": "Respectfulness"
+            },
+            {
+                "id": 53,
+                "statement": "Is persistent, works until the task is finished.",
+                "reversed": false,
+                "facet": "Productiveness"
+            },
+            {
+                "id": 54,
+                "statement": "Tends to feel depressed, blue.",
+                "reversed": false,
+                "facet": "Depression"
+            },
+            {
+                "id": 55,
+                "statement": "Has little interest in abstract ideas.",
+                "reversed": true,
+                "facet": "Intellectual_curiosity"
+            },
+            {
+                "id": 56,
+                "statement": "Shows a lot of enthusiasm.",
+                "reversed": false,
+                "facet": "Energy level"
+            },
+            {
+                "id": 57,
+                "statement": "Assumes the best about people.",
+                "reversed": false,
+                "facet": "Trust"
+            },
+            {
+                "id": 58,
+                "statement": "Sometimes behaves irresponsibly.",
+                "reversed": true,
+                "facet": "Responsibility"
+            },
+            {
+                "id": 59,
+                "statement": "Is temperamental, gets emotional easily.",
+                "reversed": false,
+                "facet": "Emotional Volatility"
+            },
+            {
+                "id": 60,
+                "statement": "Is original, comes up with new ideas",
+                "reversed": false,
+                "facet": "Creative Imagination"
+            }
+        ]
+    }
+}
