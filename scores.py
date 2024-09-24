@@ -5,11 +5,9 @@ import sys
 def reverse(response):
     return 6 - int(response)
 
-# Função para calcular a média das respostas
 def mean(responses):
     valid_responses = [int(r) for r in responses if r]
     return sum(valid_responses) / len(valid_responses) if valid_responses else None
-
 
 # Função para calcular os scores de cada domínio a partir das respostas no CSV
 def scores(csv_file):
@@ -19,10 +17,11 @@ def scores(csv_file):
     with open(csv_file, mode='r') as file:
         reader = csv.DictReader(file)
         for row in reader:
-            responses[int(row['id'])] = int(row['response'])  # 'id' é o ID do item, 'response' é a resposta
+            responses[int(row['id'])] = int(row['response']) 
 
 
     # Calcular as médias para cada domínio:
+    
     #EXTRAVERSION
     BFI2_E_Sociability = mean([responses[1], reverse(responses[16]),
                                        reverse(responses[31]), responses[46]])
