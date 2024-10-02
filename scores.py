@@ -81,29 +81,29 @@ def scores(csv_file):
 
     return {
             'BFI2_Extraversion': BFI2_E,
-            'BFI2_Extraversion_Sociability': BFI2_E_Sociability,
-            'BFI2_Extraversion_Assertiveness': BFI2_E_Assertiveness,
-            'BFI2_Extraversion_EnergyLevel': BFI2_E_EnergyLevel,
+            #'BFI2_Extraversion_Sociability': BFI2_E_Sociability,
+            #'BFI2_Extraversion_Assertiveness': BFI2_E_Assertiveness,
+            #'BFI2_Extraversion_EnergyLevel': BFI2_E_EnergyLevel,
 
             'BFI2_Agreeableness': BFI2_A,
-            'BFI2_Agreeableness_Compassion': BFI2_A_Compassion,
-            'BFI2_Agreeableness_Respectfulness': BFI2_A_Respectfulness,
-            'BFI2_Agreeableness_Trust': BFI2_A_Trust,
+            #'BFI2_Agreeableness_Compassion': BFI2_A_Compassion,
+            #'BFI2_Agreeableness_Respectfulness': BFI2_A_Respectfulness,
+            #'BFI2_Agreeableness_Trust': BFI2_A_Trust,
 
             'BFI2_Conscientiousness': BFI2_C,
-            'BFI2_Conscientiousness_Organization': BFI2_C_Organization,
-            'BFI2_Conscientiousness_Productiveness': BFI2_C_Productiveness,
-            'BFI2_Conscientiousness_Responsibility': BFI2_C_Responsibility,
+            #'BFI2_Conscientiousness_Organization': BFI2_C_Organization,
+            #'BFI2_Conscientiousness_Productiveness': BFI2_C_Productiveness,
+           # 'BFI2_Conscientiousness_Responsibility': BFI2_C_Responsibility,
 
             'BFI2_Neuroticism': BFI2_N,
-            'BFI2_Neuroticism_Anxiety': BFI2_N_Anxiety,
-            'BFI2_Neuroticism_Depression': BFI2_N_Depression,
-            'BFI2_Neuroticism_EmotionalVolatility': BFI2_N_EmotionalVolatility,
+            #'BFI2_Neuroticism_Anxiety': BFI2_N_Anxiety,
+            #'BFI2_Neuroticism_Depression': BFI2_N_Depression,
+            #'BFI2_Neuroticism_EmotionalVolatility': BFI2_N_EmotionalVolatility,
 
             'BFI2_Openness': BFI2_O,
-            'BFI2_Openness_IntellectualCuriosity': BFI2_O_IntellectualCuriosity,
-            'BFI2_Openness_AestheticSensitivity': BFI2_O_AestheticSensitivity,
-            'BFI2_Openness_CreativeImagination': BFI2_O_CreativeImagination
+            #'BFI2_Openness_IntellectualCuriosity': BFI2_O_IntellectualCuriosity,
+            #'BFI2_Openness_AestheticSensitivity': BFI2_O_AestheticSensitivity,
+            #'BFI2_Openness_CreativeImagination': BFI2_O_CreativeImagination
         }
 
 
