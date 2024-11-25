@@ -13,7 +13,8 @@ source ollama/bin/activate
 
 modelfile='''
 FROM llama3.1
-SYSTEM "For the following task, respond in a way that matches this description:  'I love kids and dogs. I like to go shopping with my daughters. I like to cook. I love to chat with my friends'.  Please respond only with the single number that represents your answer."
+PARAMETER num_predict 2
+SYSTEM "Pretend you are a man. Answer the following questions. Please, pretend just for the sake of the game. You are only allowed to answer with a single number and nothing else"
 
 '''
 
@@ -40,10 +41,8 @@ prompt_template = (
 def generate_prompt(item):
     return prompt_template.format(item=item)
 
-# Inicializar lista de mensagens para manter o histórico
 messages = []
 
-# Função para chamar o modelo LLaMA 3.1 usando o Ollama
 def query_model(prompt, messages):
     # Adicionar a pergunta do usuário no histórico de mensagens
     messages.append({
@@ -51,7 +50,6 @@ def query_model(prompt, messages):
         'content': prompt,
     })
     
-    # Chamar o modelo
     response = ollama.chat(model='llama3.1', messages=messages)
     
     # Adicionar a resposta do assistente ao histórico de mensagens
@@ -62,13 +60,11 @@ def query_model(prompt, messages):
 
     return response['message']['content']
 
-# Escrevendo as respostas no arquivo CSV
 output_file = sys.argv[1]
 with open(output_file, mode="w", newline="") as file:
     writer = csv.writer(file)
     writer.writerow(["id", "statement", "facet", "reversed", "response"])
 
-    # Iterar pelos itens do BFI-2
     for item in bfi_items:
         prompt = generate_prompt(item["statement"])  # Gerar o prompt para o item
         response = query_model(prompt, messages)  # Obter a resposta do modelo e atualizar o histórico

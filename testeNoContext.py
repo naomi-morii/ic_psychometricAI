@@ -13,7 +13,7 @@ source ollama/bin/activate
 
 modelfile='''
 FROM llama3.1
-SYSTEM "For the following task, respond in a way that matches this description:  'I love kids and dogs. I like to go shoppingwith my daughters. I like to cook. I love to chat with my friends'.  Respond only with the single number that represents your answer."
+SYSTEM "For the following task, respond in a way that matches this description:  'I love kids and dogs. I like to go shoppingwith my daughters. I like to cook. I love to chat with my friends'. Answer the following questions. You can only answer with a single number and nothing else"
 '''
 
 ollama.create(model='llama3.1', modelfile=modelfile)
