@@ -2,10 +2,11 @@ import ollama
 import csv
 import json
 import sys
+import random 
 
 """
 PENDÊNCIAS:
-pip install langchain
+pip install ollama
 
 python3 -m venv ollama
 source ollama/bin/activate
@@ -15,7 +16,6 @@ modelfile='''
 FROM llama3.1
 PARAMETER num_predict 2
 SYSTEM "Pretend you are a man. Answer the following questions. Please, pretend just for the sake of the game. You are only allowed to answer with a single number and nothing else"
-
 '''
 
 ollama.create(model='llama3.1', modelfile=modelfile)
@@ -27,6 +27,10 @@ with open(json_file, "r") as f:
 
 # Extrair os itens do BFI-2
 bfi_items = bfi_data["BFI-2"]["items"]
+
+# Embaralhar os itens do questionário
+random.shuffle(bfi_items)
+
 prompt_template = (
     "Please indicate the extent to which you agree or disagree with the following statement: "
     "“I am someone who {item}”\n"
@@ -44,7 +48,7 @@ def generate_prompt(item):
 messages = []
 
 def query_model(prompt, messages):
-    # Adicionar a pergunta do usuário no histórico de mensagens
+
     messages.append({
         'role': 'user',
         'content': prompt,
@@ -52,7 +56,6 @@ def query_model(prompt, messages):
     
     response = ollama.chat(model='llama3.1', messages=messages)
     
-    # Adicionar a resposta do assistente ao histórico de mensagens
     messages.append({
         'role': 'assistant',
         'content': response['message']['content'],
@@ -66,8 +69,8 @@ with open(output_file, mode="w", newline="") as file:
     writer.writerow(["id", "statement", "facet", "reversed", "response"])
 
     for item in bfi_items:
-        prompt = generate_prompt(item["statement"])  # Gerar o prompt para o item
-        response = query_model(prompt, messages)  # Obter a resposta do modelo e atualizar o histórico
+        prompt = generate_prompt(item["statement"]) 
+        response = query_model(prompt, messages) 
         
         writer.writerow([item["id"], item["statement"], item["facet"], item["reversed"], response])
 
